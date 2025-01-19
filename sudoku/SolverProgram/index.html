@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahom Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-page">
+        <h1>Nahom Games</h1>
+        <button id="generate-btn">Generate Sudoku</button>
+        <button id="solve-btn">Solve Sudoku</button>
+    </div>
+    <div id="generate-page" style="display:none;">
+        <h2>Generate Sudoku</h2>
+        <select id="difficulty-select">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button id="generate-sudoku-btn">Generate</button>
+        <button id="back-to-welcome-btn">Back</button>
+    </div>
+    <div id="solve-page" style="display:none;">
+        <div id="grid-container"></div>
+        <button id="solve-sudoku-btn">Solve</button>
+        <button id="finish-sudoku-btn">Finish</button>
+        <button id="clear-sudoku-btn">Clear</button>
+        <button id="back-to-welcome-from-solve-btn">Back</button>
+        <div id="error-message"></div>
+        <div id="success-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
